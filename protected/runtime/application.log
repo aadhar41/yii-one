@@ -1,0 +1,21 @@
+2022/07/21 09:22:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\Lenovo\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dashboard')
+#3 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/dashboard
+---
+2022/07/21 10:25:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wf_tutorials.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2022/07/21 10:38:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\Lenovo\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('event/index')
+#3 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/event/index
+---
