@@ -19,3 +19,80 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/event/index
 ---
+2022/07/21 10:57:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wf_tutorials.country' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `country`.
+in C:\Users\Lenovo\yiiapp\index.php (13)
+2022/07/21 10:57:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wf_tutorials.country' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `country`.
+in C:\Users\Lenovo\yiiapp\index.php (13)
+2022/07/21 11:10:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "form". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('form')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/form
+---
+2022/07/21 11:10:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "ForumModule". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ForumModule')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ForumModule
+---
+2022/07/21 11:10:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "forum". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('forum')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/forum
+---
+2022/07/21 11:39:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "country/country/index". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('country/country...')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/country/country/index
+---
+2022/07/21 11:39:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "country/create". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('country/create')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/country/create
+---
+2022/07/21 11:39:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "country/country". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('country/country')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/country/country
+---
+2022/07/21 11:39:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "country/create". in C:\Users\Lenovo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('country/create')
+#1 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/country/create
+---
+2022/07/21 11:41:50 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Users\Lenovo\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Users\Lenovo\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Lenovo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Lenovo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Users\Lenovo\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\Users\Lenovo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Users\Lenovo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Users\Lenovo\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Users\Lenovo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\Users\Lenovo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('country/countri...')
+#10 C:\Users\Lenovo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\Lenovo\yiiapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/country/countries/view
+---
